@@ -54,8 +54,8 @@ jobs:
       # Checkout the code as the first step.
       # - checkout
       - run:
-          name: "sleep for 20 s, test hello"
-          command: "sleep 20"
+          name: "sleep for 20 s, test hello from fork"
+          command: "sleep 10"
           
   sleep:
     # docker:
