@@ -54,8 +54,8 @@ jobs:
       # Checkout the code as the first step.
       # - checkout
       - run:
-          name: "sleep for 1 minute"
-          command: "sleep 1200"
+          name: "sleep for 20 s, test hello"
+          command: "sleep 20"
           
   sleep:
     # docker:
@@ -212,7 +212,7 @@ workflows:
       #      - <<pipeline.parameters.nightly>>
     jobs:
       # - sleep_3_default
-      # - sleep_0
+      - sleep_0
       # - sleep
       # - sleep_2
       # - sleep_3
